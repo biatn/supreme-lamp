@@ -10,6 +10,9 @@
     --font_reserva: "Great Vibes", cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     -moz-osx-font-smoothing: grayscale;
@@ -131,22 +134,36 @@ nav ul li ul li a:focus {
     box-shadow: 0px 0px 10px black;
 }
 
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 700px));
+    gap: 16px;
+    justify-content: center;
+}
+
 .cafe-card {
-    background-color: red;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 500px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 
     .cafe-card-title {
+        background-color: var(--cor_fundo);
         font-size: 24px;
         padding: 16px;
         color: black;
         font-weight: bold;
     }
 
-    .cafe-card-description {
-        background-color: green;
+    .cafe-card-description-section {
         display: flex;
         padding: 16px;
         gap: 16px;
-        text-align: center;
+        align-items: center;
+
+        .cafe-card-description-section-text {
+            color: black;
+        }
     }
 }
 
@@ -189,4 +206,24 @@ footer {
 footer a {
     color: #008FEA;
     text-decoration: none;
+}
+
+@media (max-width: 425px) {
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+
+        .cafe-card-description-section img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #222;
+        font-weight: bold;
+    }
 }
