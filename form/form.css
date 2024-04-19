@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext);
+
+:root {
+    --cor-titulo: ;
+    --cor-fundo: #e0af86;
+    --cor-sub: ;
+    --cor_fundoform: ;
+
+    --font-titulo: "Pacifico", cursive;
+    --font-sub: "Great Vibes", cursive;
+    --font-reserva: ;
+    --font_corpo: "Whisper", cursive;
+    ;
+
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    background-image: url(“fundo.jpg”);
+}
+
+.form {
+    background-color: white;
+    max-width: 30%;
+    min-width: 30%;
+    padding: 0, 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--font-titulo);
+    margin-top: 60;
+}
+
+p {
+    text-decoration: underline;
+
+}
+
+.formulario {
+    background-color: rgb(245, 245, 245);
+    width: 400px;
+    padding: 50px;
+    border: 1px #da580d;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 50px;
+
+}
+
+
+.formulario p {
+    width: 100%;
+    font-size: 1.5em;
+    font-family: var(--font-sub)
+}
+
+.field {
+    width: 100%;
+    margin: 15px 0;
+
+
+}
+
+.field label {
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    font-family: var(--font_corpo);
+
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=time],
+
+textarea {
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #da580d;
+    outline: none;
+    font-family: var(--font_corpo);
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none,
+        /*margin: 0;*/
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+    font-family: var(--font_corpo);
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #da580d;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+
+}

@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="" />
+    <title> Nutri </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="form.css">
+
+</head>
+
+<body>
+    <script type="text/javascript" src="ap.js"></script>
+    <div class="form">
+        <h1>
+            Formulario
+        </h1>
+    </div>
+
+    <form class="formulario" method="post">
+
+        <p> Questionário </p>
+
+        <div class="field">
+            <label for="data"> Data de preenchimento do questionário.</label>
+            <input id="date" type="date" required />
+            <label for="altura"> Qual seu tipo de café favorito?</label>
+            <input id="altura" type="text" maxlength="4" minlength="4">
+        </div>
+
+        <div class="field">
+            <label for="nome"> Seu Nome:</label>
+            <input type="text" name="alergia" size="30" required>
+        </div>
+
+        <div class="field">
+            <label for="email"> Email para contato.</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+            <label for="telefone"> Telefone para contato.</label>
+            <input type="text" id="telefone" neme="telefone" required>
+        </div>
+
+        <p> Rotina </p>
+
+        <div class="field">
+            <label for="horario"> Em quais horários você costuma beber café?</label>
+            <input id="time" type="time" value="15:30">
+            <input id="time" type="time" value="7:00">
+        </div>
+
+        <div class="field">
+            <label for="objetivo"> Como prefere beber seu café?</label>
+            <input type="radio" name="objetivo" value="E" checked /> Quente
+            <input type="radio" name="objetivo" value="H" checked /> Gelado
+        </div>
+
+        <div class="field">
+            <label for="pratica"> Em quais dias da semana você consome mais café?</label>
+            <input type="checkbox" name="segunda" id="semana" value="S"> Segunda-Feiras
+            <br>
+            <input type="checkbox" name="terça" id="semana" value="T"> Terça-Feira
+            <br>
+            <input type="checkbox" name="quarta" id="semana" value="Q"> Quarta-Feira
+            <br>
+            <input type="checkbox" name="quinta" id="semana" value="Qu"> Quinta-Feira
+            <br>
+            <input type="checkbox" name="sexta" id="semana" value="SE"> Sexta-Feira
+            <br>
+            <input type="checkbox" name="sabado" id="semana" value="SA"> Sabado
+            <br>
+            <input type="checkbox" name="domingo" id="semana" value="D"> Domingo
+        </div>
+
+        <input type="submit" name="acao" value="Enviar">
+
+    </form>
+
+
+</body>
+
+</html>
